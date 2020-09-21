@@ -1,6 +1,6 @@
 from time import sleep
-from Live import load_game
-difficulty = load_game()
+
+difficulty = 5
 
 
 def _generate_number():
