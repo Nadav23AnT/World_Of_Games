@@ -1,6 +1,7 @@
 import time
 
 difficulty = 5
+erase = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
 
 def _generate_sequence():
@@ -10,7 +11,8 @@ def _generate_sequence():
     for number in range(difficulty):
         random_numbers.append(int(random.uniform(1, 101)))
     print(random_numbers)
-    time.sleep(2)
+    time.sleep(0.7)
+    print(erase)
     return random_numbers
 
 
@@ -36,6 +38,7 @@ def _is_list_equal(random_numbers, user_numbers):
 def play():
     # The start function, will start all functions and return false or true
     random_numbers = _generate_sequence()
+    print(erase)
     user_numbers = _get_list_from_user()
     if _is_list_equal(user_numbers=user_numbers, random_numbers=random_numbers):
         print("You Won")
