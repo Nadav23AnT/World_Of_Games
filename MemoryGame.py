@@ -1,7 +1,6 @@
 import time
 import os
-
-difficulty = 5
+from MainGame import difficulty
 
 
 
