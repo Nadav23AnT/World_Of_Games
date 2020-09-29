@@ -1,5 +1,4 @@
 from time import sleep
-from MainGame import difficulty
 
 
 def _generate_number():
