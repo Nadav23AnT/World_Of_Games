@@ -3,7 +3,6 @@ import os
 from MainGame import difficulty
 
 
-
 def _generate_sequence():
     # Generate 5 Random numbers, creates a list and prints it
     import random
