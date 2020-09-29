@@ -1,6 +1,5 @@
 import time
 import os
-from MainGame import difficulty
 
 
 def _generate_sequence():
