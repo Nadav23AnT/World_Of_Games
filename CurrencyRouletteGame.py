@@ -40,4 +40,3 @@ def play(difficulty):
     else:
         return False
 
-
