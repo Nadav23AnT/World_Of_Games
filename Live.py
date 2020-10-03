@@ -8,6 +8,7 @@ def _welcome(name):
     # collect the name of the player and prints it
     name = input('What is your Name? ')
     print(f'Hello {name} and welcome to the World of Games (WoG) \nHere you can find many cool games to play.')
+    return name
 
 
 def load_game():
