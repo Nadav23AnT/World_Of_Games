@@ -2,7 +2,7 @@ import time
 import os
 
 
-def _generate_sequence():
+def _generate_sequence(difficulty):
     # Generate 5 Random numbers, creates a list and prints it
     import random
     random_numbers = []
@@ -14,7 +14,7 @@ def _generate_sequence():
     return random_numbers
 
 
-def _get_list_from_user():
+def _get_list_from_user(difficulty):
     # The user choose 5 numbers
     user_numbers = []
     print(f"Please Insert {difficulty} numbers")
@@ -33,17 +33,11 @@ def _is_list_equal(random_numbers, user_numbers):
         return False
 
 
-def play():
+def play(difficulty):
     # The start function, will start all functions and return false or true
-    random_numbers = _generate_sequence()
-    user_numbers = _get_list_from_user()
+    random_numbers = _generate_sequence(difficulty)
+    user_numbers = _get_list_from_user(difficulty)
     if _is_list_equal(user_numbers=user_numbers, random_numbers=random_numbers):
-        print("You Won")
         return True
     else:
-        print("You lost")
         return False
-
-
-play()
-# Calling the start module
