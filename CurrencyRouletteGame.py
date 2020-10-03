@@ -5,7 +5,7 @@ import random
 
 def get_money_interval(difficulty):
     # Will get the Current currency
-    # and generate an int : difficulty = d, money = t [(t - (5 - d), t + (5 - d))]
+    # and generate an integer: difficulty by high / low, range calculator[(t - (5 - d) t + (5 - d))]
     url = "https://free.currconv.com/api/v7/convert?q=USD_ILS&compact=ultra&apiKey=2e015e19466c486dc19f"
     response = r.urlopen(url)
     data = json.load(response)
