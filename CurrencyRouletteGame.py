@@ -37,7 +37,7 @@ def play(difficulty):
     usd, t, low, high = get_money_interval(difficulty)
     guess = get_guess_from_user(usd)
     os.system('cls' if os.name == 'nt' else 'clear')
-    if guess <= high or guess >= low:
+    if high >= guess >= low:
         return True
     else:
         return False
