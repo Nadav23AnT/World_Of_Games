@@ -1,11 +1,11 @@
 import urllib.request as r
 import json
 import random
-
+import os
 
 def get_money_interval(difficulty):
     # Will get the Current currency
-    # and generate an integer: difficulty by high / low, range calculator[(t - (5 - d) t + (5 - d))]
+    # and generate an int : difficulty = d, money = t [(t - (5 - d), t + (5 - d))]
     # API key from "free.currencyconverterapi.com": 2e015e19466c486dc19f
     url = "https://free.currconv.com/api/v7/convert?q=USD_ILS&compact=ultra&apiKey=2e015e19466c486dc19f"
     response = r.urlopen(url)
@@ -36,6 +36,7 @@ def play(difficulty):
     # Will call all other functions to start the game
     usd, t, low, high = get_money_interval(difficulty)
     guess = get_guess_from_user(usd)
+    os.system('cls' if os.name == 'nt' else 'clear')
     if guess <= high or guess >= low:
         return True
     else:
