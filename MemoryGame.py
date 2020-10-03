@@ -18,8 +18,8 @@ def _get_list_from_user(difficulty):
     # The user choose 5 numbers
     user_numbers = []
     print(f"Please Insert {difficulty} numbers")
-    for number in range(difficulty):
-        number = user_numbers.append(int(input("Import a Number: ")))
+    for i in range(difficulty):
+        i = user_numbers.append(int(input("Import a Number: ")))
     return user_numbers
 
 
@@ -27,6 +27,7 @@ def _is_list_equal(random_numbers, user_numbers):
     # Checking if the lists are equal
     random_numbers.sort()
     user_numbers.sort()
+    os.system('cls' if os.name == 'nt' else 'clear')
     if random_numbers == user_numbers:
         return True
     else:
