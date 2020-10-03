@@ -1,3 +1,9 @@
+import GuessGame
+import MemoryGame
+import CurrencyRouletteGame
+global difficulty, decision
+
+
 def _welcome(name):
     # collect the name of the player and prints it
     name = input('What is your Name? ')
@@ -23,5 +29,13 @@ def load_game():
         except ValueError:
             print("Error: Enter just numbers please, not letters, words ,etc...")
             continue
-
+        if decision == 1:
+            # Calling Game number one (Guess game)
+            GuessGame.play(difficulty)
+        if decision == 2:
+            # Calling Game number Two (Memory game)
+            MemoryGame.play(difficulty)
+        if decision == 3:
+            # Calling Game number Two (CurrencyRoulette Game)
+            CurrencyRouletteGame.play(difficulty)
         return difficulty, decision
