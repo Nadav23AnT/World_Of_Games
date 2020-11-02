@@ -2,6 +2,7 @@ import GuessGame
 import MemoryGame
 import CurrencyRouletteGame
 global difficulty, decision
+from Score import add_score
 
 
 def _welcome(name):
@@ -33,10 +34,16 @@ def load_game():
         if decision == 1:
             # Calling Game number one (Guess game)
             GuessGame.play(difficulty)
+            if GuessGame is True:
+                add_score(difficulty=difficulty)
         if decision == 2:
             # Calling Game number Two (Memory game)
             MemoryGame.play(difficulty)
+            if MemoryGame is True:
+                add_score(difficulty=difficulty)
         if decision == 3:
             # Calling Game number Two (CurrencyRoulette Game)
             CurrencyRouletteGame.play(difficulty)
+            if CurrencyRouletteGame is True:
+                add_score(difficulty=difficulty)
         return difficulty, decision
