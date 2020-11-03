@@ -1,8 +1,7 @@
 
-POINTS_OF_WINNING = (difficulty * 3) + 5
-
 
 def add_score(difficulty):
+    POINTS_OF_WINNING = (difficulty * 3) + 5
     # The function will read the current score in the scores file,
     # if it fails it will create a new one and will save the current score.
     try:
