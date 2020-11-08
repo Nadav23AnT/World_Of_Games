@@ -1,5 +1,6 @@
+from pathlib import Path
 
-SCORES_FILE_NAME = open(r"E:\MyGitRepo\World_Of_Games\Scores.txt", "x")
+SCORES_FILE_NAME = open(Path("Scores.txt"), "x")
 # A string representing a file name. By default “Scores.txt”
 
 BAD_RETURN_CODE = int(401)
