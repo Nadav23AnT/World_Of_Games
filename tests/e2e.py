@@ -4,8 +4,8 @@ driver = webdriver.Chrome('chromedriver')
 
 def test_scores_service():
     driver.get("http://127.0.0.1:5000/")
-    score_element = int(driver.find_element_by_id("score"))
-    if 1000 >= score_element >= 1:
+    score_element = driver.find_element_by_id("score")
+    if 1000 >= int(score_element) >= 1:
         return True
     else:
         return False
