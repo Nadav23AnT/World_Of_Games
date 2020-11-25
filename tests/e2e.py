@@ -1,5 +1,5 @@
 from selenium import webdriver
-driver = webdriver.Chrome(executable_path='/path/to/chromedriver')
+driver = webdriver.Chrome('chromedriver')
 
 
 def test_scores_service():
@@ -20,3 +20,5 @@ def main_function():
     else:
         return -1
 
+
+main_function()
