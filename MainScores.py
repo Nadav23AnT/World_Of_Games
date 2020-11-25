@@ -8,9 +8,9 @@ app = Flask(__name__)
 def score_server():
     try:
         score = open(Path("Scores.txt"), "r")
-        return render_template("score.html")  # Open score details
+        return render_template("score.html", SCORE=score)  # Open score details
     except FileNotFoundError or FileExistsError:  # If the file didn't open for any reason
-        return render_template("error.html")  # Prints error message
+        return render_template("error.html", ERROR="Unknown Error")  # Prints error message
 
 
 app.run()
