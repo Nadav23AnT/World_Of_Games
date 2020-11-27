@@ -1,7 +1,8 @@
 # World_Of_Games
 ---
-[Docker Hub](https://hub.docker.com/repository/docker/nadav23chen/world_of_games)
 ![World Of Games](worldofgames.png)
+# [Docker Hub]
+![DockerHub](https://d1q6f0aelx0por.cloudfront.net/product-logos/644d2f15-c5db-4731-a353-ace6235841fa-registry.png)
 Game based mainly with Python, (`Using Git, Docker, Jenkins, Selenium, Rest API...`)
 ### CI-CD 
 # Using jenkins to complete the CI-CD process:
@@ -17,3 +18,4 @@ Game based mainly with Python, (`Using Git, Docker, Jenkins, Selenium, Rest API.
 
 
 [My Linkedin]: https://www.linkedin.com/in/nadavchen22/
+[Docker Hub]: https://hub.docker.com/repository/docker/nadav23chen/world_of_games
