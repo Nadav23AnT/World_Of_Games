@@ -12,8 +12,8 @@ Game based mainly with Python, ('Using Git, Docker, Jenkins, Selenium, Rest API.
 - Test our new container ('e2e.py file')
 - The new Image is uploaded as a new version to Docker Hub
 ---
-![Linkedin](http://www.myiconfinder.com/uploads/iconsets/256-256-6015c9ab375a98f6b6dfd60795f1ef9d.png)
 # [My Linkedin]
+![Linkedin](http://www.myiconfinder.com/uploads/iconsets/256-256-6015c9ab375a98f6b6dfd60795f1ef9d.png)
 
 
 [My Linkedin]: https://www.linkedin.com/in/nadavchen22/
