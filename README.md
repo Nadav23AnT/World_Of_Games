@@ -9,7 +9,7 @@ Game based mainly with Python, ('Using Git, Docker, Jenkins, Selenium, Rest API.
 - Checking out git repository for change as trigger
 - Building a new image
 - Run a container with the new image
-- Test our new container ('e2e.py file')
+- Test our new container ( 'e2e.py file' )
 - The new Image is uploaded as a new version to Docker Hub
 ---
 # [My Linkedin]
